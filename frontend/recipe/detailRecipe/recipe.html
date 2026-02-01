@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Details</title>
+    <link rel="stylesheet" href="recipe.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2>🍲 RecipeHub</h2>
+      <div class="nav-row">
+      <button class="back-btn" onclick="goHome()">← Back</button>
+    
+       <button class="rv-btn" onclick="goToReview()">Write a Review</button>
+        
+       </div>
+    </nav>
+
+    <div class="recipe-details">
+      <div class="recipe-hero">
+        <img id="recipeImage" />
+        <div class="recipe-title" id="recipeTitle"></div>
+      </div>
+
+      <div class="recipe-content">
+        <p class="meta" id="recipeMeta"></p>
+
+        <h2>Ingredients</h2>
+        <ul id="ingredientsList"></ul>
+
+        <h2>Instructions</h2>
+        <ol id="stepsList"></ol>
+
+      </div>
+    </div>
+
+    <script type="module" src="./recipe.js"></script>
+  </body>
+</html>

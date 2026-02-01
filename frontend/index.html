@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Recipes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 16px;
+        "
+      >
+        <h2>🍲 RecipeHub</h2>
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+      </div>
+      <input id="searchInput" type="text" placeholder="Search recipes..." />
+      <select id="dietFilter">
+        <option value="all">All</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Vegan">Vegan</option>
+        <option value="Non-Vegetarian">Non-Vegetarian</option>
+      </select>
+    </nav>
+
+    <h1 class="page-title">All Recipes</h1>
+
+    <section class="recipes-container" id="recipesContainer"></section>
+
+    <!-- ONLY ONE SCRIPT -->
+    <script type="module" src="./recipe/main.js"></script>
+  </body>
+</html>

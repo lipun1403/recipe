@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Write a Review</title>
+    <link rel="stylesheet" href="review.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <button class="back-btn" id="backBtn">← Back</button>
+    <div class="review-box">
+      <h2>Write a Review</h2>
+
+      <form id="reviewForm">
+        <label>Rating</label>
+        <select id="rating">
+          <option value="">Select rating</option>
+          <option value="1">⭐ 1</option>
+          <option value="2">⭐⭐ 2</option>
+          <option value="3">⭐⭐⭐ 3</option>
+          <option value="4">⭐⭐⭐⭐ 4</option>
+          <option value="5">⭐⭐⭐⭐⭐ 5</option>
+        </select>
+
+        <label>Your Review</label>
+        <textarea
+          id="review"
+          rows="4"
+          placeholder="Write your review..."
+        ></textarea>
+
+        <button type="submit" id="submitBtn" disabled>Submit Review</button>
+      </form>
+    </div>
+
+    <script type="module" src="review.js"></script>
+  </body>
+</html>

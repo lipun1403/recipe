@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Preferences</title>
+  <link rel="stylesheet" href="pre.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+  <div class="container">
+    <h2>Your Food Preferences</h2>
+
+    <!-- DIET TYPE -->
+    <select id="diet">
+      <option value="">Select Diet Type</option>
+      <option value="Vegetarian">Vegetarian</option>
+      <option value="Non-Vegetarian">Non-Vegetarian</option>
+      <option value="Vegan">Vegan</option>
+    </select>
+
+    <!-- COOKING LEVEL -->
+    <select id="level">
+      <option value="">Cooking Level</option>
+      <option value="Beginner">Beginner</option>
+      <option value="Intermediate">Intermediate</option>
+      <option value="Expert">Expert</option>
+    </select>
+
+    <!-- ALLERGIES -->
+    <h3>Allergies</h3>
+    <div class="options">
+      <label><input type="checkbox" name="allergy" value="peanut"> Peanut</label>
+      <label><input type="checkbox" name="allergy" value="dairy"> Dairy</label>
+      <label><input type="checkbox" name="allergy" value="gluten"> Gluten</label>
+      <label><input type="checkbox" name="allergy" value="egg"> Egg</label>
+      <label><input type="checkbox" name="allergy" value="seafood"> Seafood</label>
+    </div>
+
+    <input
+      type="text"
+      id="allergyCustom"
+      placeholder="Other allergies (comma separated)"
+    />
+
+    <!-- DISLIKED INGREDIENTS -->
+    <h3>Disliked Ingredients</h3>
+    <div class="options">
+      <label><input type="checkbox" name="disliked" value="onion"> Onion</label>
+      <label><input type="checkbox" name="disliked" value="garlic"> Garlic</label>
+      <label><input type="checkbox" name="disliked" value="tomato"> Tomato</label>
+      <label><input type="checkbox" name="disliked" value="mushroom"> Mushroom</label>
+      <label><input type="checkbox" name="disliked" value="capsicum"> Capsicum</label>
+    </div>
+
+    <input
+      type="text"
+      id="dislikedCustom"
+      placeholder="Other disliked ingredients (comma separated)"
+    />
+
+    <button id="savePref">Save Preferences</button>
+  </div>
+
+  <script src="pre.js"></script>
+</body>
+</html>

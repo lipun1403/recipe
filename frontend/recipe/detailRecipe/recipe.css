@@ -1,0 +1,158 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PAGE */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* MAIN WRAPPER */
+.recipe-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* HERO IMAGE */
+.recipe-hero {
+  border-radius: 20%;
+  padding: 10px;
+  width: 100%;
+  height: 70vh; /* covers most of screen */
+  position: relative;
+  overflow: hidden;
+}
+
+.recipe-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TITLE OVER IMAGE */
+.recipe-title {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* CONTENT SECTION */
+.recipe-content {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* META */
+.meta {
+  text-align: center;
+  color: #777;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+/* SECTION HEADINGS */
+.recipe-content h2 {
+  margin: 30px 0 15px;
+  color: #ff6f61;
+  font-size: 22px;
+}
+
+/* LISTS */
+#ingredientsList,
+#stepsList {
+  padding-left: 20px;
+}
+
+#ingredientsList li,
+#stepsList li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 18px;
+  background: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* NAVBAR BUTTON */
+.rv-btn {
+  padding: 10px 18px;
+  background: #2e7d32; /* green */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .recipe-hero {
+    height: 45vh;
+  }
+
+  .recipe-title {
+    font-size: 22px;
+    padding: 10px 18px;
+  }
+
+  .recipe-content {
+    margin-top: 25px;
+  }
+}
+
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  padding: 15px 25px;
+  background: white;
+  box-shadow: 0 2px 8px white;
+}
+
+/* SECOND ROW */
+.nav-row {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* LEFT */
+.back-btn {
+  margin-left: 0;
+}
+
+/* RIGHT */
+.rv-btn {
+  margin-left: auto;
+}
+
+
+

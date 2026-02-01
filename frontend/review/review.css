@@ -1,0 +1,87 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔙 Back Button (top-left, layout safe) */
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  padding: 10px 18px;
+  background: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+
+  transition: background 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #e85b50;   /* sirf button highlight */
+}
+
+/* Review Box */
+.review-box {
+  background: #fff;
+  width: 350px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.review-box h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background: #ff6f61;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #e68900;
+}
